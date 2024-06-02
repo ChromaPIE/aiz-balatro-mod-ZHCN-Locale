@@ -18,7 +18,7 @@ local config = {
 	loudspeaker = true,
 	easyMode = true,
 	antiBubzia = true,
-	blåhaj = true,
+	blahaj = true,
 	chess_pawn = true,
 	chess_knight = true,
 	chess_bishop = true,
@@ -171,11 +171,10 @@ function Jokers()
 		-- Create Joker
 		local chill_joker = {
 			loc = {
-				name = "Chill Joker",
+				name = "松弛感小丑",
 				text = {
-					"{X:mult,C:white}X#1#{} Mult divided",
-					"by game speed",
-					"{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)",
+					"{X:mult,C:white}X(#1#/游戏速度){}倍率",
+					"{C:inactive}（当前为{X:mult,C:white}X#2#{C:inactive}倍率）",
 				},
 			},
 			ability_name = "Aiz Chill Joker",
@@ -226,11 +225,11 @@ function Jokers()
 		-- Create Joker
 		local loudspeaker = {
 			loc = {
-				name = "Loudspeaker",
+				name = "扬声器",
 				text = {
-					"Gives {C:chips}Chips{} based",
-					"on {C:attention}Audio volume{}",
-					"{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
+					"依据游戏的{C:attention}设置音量",
+					"给予{C:chips}筹码",
+					"{C:inactive}（当前为{C:chips}+#1#{C:inactive}筹码）",
 				},
 			},
 			ability_name = "Aiz Loudspeaker",
@@ -282,13 +281,12 @@ function Jokers()
 		-- Create Joker
 		local easyMode = {
 			loc = {
-				name = "Easy Mode",
+				name = "简单模式",
 				text = {
-					"Gives {C:mult}+1 mult{} for",
-					"every 2 jokers with",
-					"{C:attention}White stickers{}",
-					"in your collection",
-					"{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)",
+					"收藏中每有2张",
+					"拥有{C:attention}白色纪念贴{}的小丑牌",
+					"{C:mult}+1{}倍率",
+					"{C:inactive}（当前为{C:mult}+#1#{C:inactive}倍率）",
 				},
 			},
 			ability_name = "Aiz Easy Mode",
@@ -343,21 +341,21 @@ function Jokers()
 		end
 	end
 
-	if config.blåhaj then
+	if config.blahaj then
 		-- Blåhaj
 		-- Does nothing by itself since it just gives +1 joker slot
 		-- Has code in Card:add_to_deck & Card:remove_from_deck
 
 		-- Create Joker
-		local blåhaj = {
+		local blahaj = {
 			loc = {
-				name = "Blåhaj",
+				name = "布罗艾鲨鱼",
 				text = {
-					"{C:dark_edition}+#1#{} Joker slots",
+					"{C:dark_edition}+#1#{}小丑牌槽位",
 				},
 			},
 			ability_name = "Aiz Blåhaj",
-			slug = "aiz_blåhaj",
+			slug = "aiz_blahaj",
 			ability = {
 				extra = {
 					j_slots = 1,
@@ -375,10 +373,10 @@ function Jokers()
 			},
 		}
 		-- Initialize Joker
-		init_joker(blåhaj)
+		init_joker(blahaj)
 
 		-- Set local variables
-		SMODS.Jokers.j_aiz_blåhaj.loc_def = function(card)
+		SMODS.Jokers.j_aiz_blahaj.loc_def = function(card)
 			return { card.ability.extra.j_slots }
 		end
 	end
@@ -624,12 +622,11 @@ function Jokers()
 		-- Create Joker
 		local penny = {
 			loc = {
-				name = "Penny",
+				name = "一分钱",
 				text = {
-					"At end of round,",
-					"duplicate {C:attention}All{} cards",
-					"in your deck",
-					"{s:0.5}Please sell when you have 1000 cards or more!",
+					"回合结束时",
+					"复制你的{C:attention}整个牌组",
+					"{s:0.5}牌组里有超过1000张牌的时候求你把它卖了，真的。"
 				},
 			},
 			ability_name = "Aiz Penny",
@@ -784,11 +781,12 @@ function Jokers()
 		-- Create Joker
 		local pawn = {
 			loc = {
-				name = "Pawn",
+				name = "兵",
 				text = {
-					"Advances at end of round",
-					"Adds current rank to mult",
-					"{C:inactive}(Currently on rank {C:attention}#1#{C:inactive})",
+					"回合结束时向前进一行",
+					"出牌计分时",
+					"将当前行数加至倍率",
+					"{C:inactive}（当前行数：{C:attention}#1#{C:inactive}）",
 				},
 			},
 			ability_name = "Aiz Pawn",
@@ -1213,10 +1211,11 @@ function Jokers()
 		-- Create Joker
 		local king = {
 			loc = {
-				name = "King",
+				name = "王",
 				text = {
-					"Other {C:attention}Chess Jokers",
-					"Give {X:mult,C:white}X#1#{} Mult",
+					"每有一张其他的",
+					"{C:attention}国际象棋小丑牌",
+					"给予{X:mult,C:white}X#1#{}倍率"
 				},
 			},
 			ability_name = "Aiz King",
