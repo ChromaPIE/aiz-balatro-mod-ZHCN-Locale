@@ -474,12 +474,11 @@ function Jokers()
 		-- Create Joker
 		local hands = {
 			loc = {
-				name = "Too Much To Handle",
+				name = "牌多握不住",
 				text = {
-					"At end of round",
-					"set a random hand size",
-					"between {C:attention}#1#{} and {C:attention}#2#{}",
-					"{C:inactive}(Currently {C:attention}#3##4#{C:inactive} hand size)",
+					"回合结束时将手牌上限设为",
+					"{C:attention}#1#{} - {C:attention}#2#{}之间的任意值",
+					"{C:inactive}（当前为{C:attention}#3##4#{C:inactive}手牌上限）",
 				},
 			},
 			ability_name = "Aiz Hand Size",
@@ -997,12 +996,11 @@ function Jokers()
 		-- Create Joker
 		local bishop = {
 			loc = {
-				name = "Bishop",
+				name = "象",
 				text = {
-					"Scored Numbered cards",
-					"earn {C:money}$#1#{}",
-					"Scored Face cards",
-					"{C:attention}lose{} {C:money}$#1#{}",
+					"打出的数字牌",
+					"在计分时给予{C:money}$#1#",
+					"人头牌则{C:attention}失去{C:money}$#1#",
 				},
 			},
 			ability_name = "Aiz Bishop",
