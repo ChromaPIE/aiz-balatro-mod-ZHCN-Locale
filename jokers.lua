@@ -694,13 +694,12 @@ function Jokers()
 
 		local trollker = {
 			loc = {
-				name = "Trollker",
+				name = "恶搞丑",
 				text = {
-					"This Joker gains {X:mult,C:white}X#2#",
-					"Mult at end of round.",
-					"This joker may do",
-					"a little bit of {C:attention,E:1,S:1.1}Trolling",
-					"{C:inactive}(Currently {X:mult,C:white}X#1#{C:inactive} Mult)",
+					"回合结束时",
+					"本牌获得{X:mult,C:white}X#2#{}倍率",
+					"本牌可能会小小地{C:attention,E:1,S:1.1}搞你一下",
+					"{C:inactive}（当前为{X:mult,C:white}X#1#{C:inactive}倍率）",
 				},
 			},
 			ability_name = "Aiz Trollker",
@@ -1068,11 +1067,11 @@ function Jokers()
 		-- Create Joker
 		local rook = {
 			loc = {
-				name = "Rook",
+				name = "车",
 				text = {
-					"Discarded cards are",
-					"turned to stone",
-					"{C:attention}-#1#{} discards",
+					"弃掉的牌",
+					"均变为石头牌",
+					"弃牌次数{C:attention}-#1#"
 				},
 			},
 			ability_name = "Aiz Rook",
