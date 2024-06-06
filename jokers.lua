@@ -1385,22 +1385,22 @@ function Jokers()
 		-- Create Joker
 		local chaos = {
 			loc = {
-				name = "Chaos",
+				name = "全乱套了",
 				text = {
-					"{C:green}#1# in #2#{} for {C:chips}+100{} Chips",
-					"{C:green}#1# in #3#{} for {C:mult}+20{} Mult",
-					"{C:green}#1# in #4#{} for {X:mult,C:white}X3{} Mult",
-					"{C:green}#1# in #5#{} for {C:money}$10",
-					"{C:green}#1# in #6#{} for a {C:tarot}Tarot{} Card",
-					"{C:green}#1# in #7#{} for a {C:planet}Planet{} Card",
-					"{C:green}#1# in #8#{} for a {C:dark_edition}Spectral{} Card",
-					"At start of round:",
-					"{C:green}#1# in #9#{} for a Playing Card",
-					"{C:green}#1# in #10#{} to flip and shuffle Jokers",
-					"{C:green}#1# in #11#{} to {C:red}Destroy{} a random Joker",
-					"{C:green}#1# in #12#{} to {C:attention}Create{} a random Joker",
-					"{C:green}#1# in #13#{} to increase this Jokers {C:green,E:1,S:1.1}Probabilities",
-					"{C:green}#1# in #14#{} to {C:attention}Double{} all listed {C:green,E:1,S:1.1}Probabilities",
+					"{C:green}#1#/#2#{}的几率{C:chips}+100{}筹码",
+					"{C:green}#1#/#3#{}的几率{C:mult}+20{}倍率",
+					"{C:green}#1#/#4#{}的几率{X:mult,C:white}X3{}倍率",
+					"{C:green}#1#/#5#{}的几率获得{C:money}$10",
+					"{C:green}#1#/#6#{}的几率获得一张{C:tarot}塔罗牌",
+					"{C:green}#1#/#7#{}的几率获得一张{C:planet}星球牌",
+					"{C:green}#1#/#8#{}的几率获得一张{C:spectral}幻灵牌",
+					"回合开始时：",
+					"{C:green}#1#/#9#{}的几率获得一张扑克牌",
+					"{C:green}#1/#10#{}的几率翻面并洗乱所有小丑牌",
+					"{C:green}#1#/#11#{}的几率随机{C:red}摧毁{}一张小丑牌",
+					"{C:green}#1#/#12#{}的几率随机{C:attention}生成{}一张小丑牌",
+					"{C:green}#1#/#13#{}的几率提升本牌的所有{C:green,E:1,S:1.1}几率",
+					"{C:green}#1#/#14#{}的几率使本牌的所有{C:green,E:1,S:1.1}几率{C:attention}翻倍"
 				},
 			},
 			ability_name = "Aiz Chaos",
@@ -1725,14 +1725,14 @@ end
 
 function SMODS.INIT.JAIZ()
 	-- Localization
-	G.localization.misc.dictionary.k_aiz_advance = "Advance!"
-	G.localization.misc.dictionary.k_aiz_promoted = "Promoted!"
-	G.localization.misc.dictionary.k_aiz_trolled = "Trolled!"
+	G.localization.misc.dictionary.k_aiz_advance = "进军！"
+	G.localization.misc.dictionary.k_aiz_promoted = "晋升！"
+	G.localization.misc.dictionary.k_aiz_trolled = "逗你玩儿！"
 	G.localization.misc.dictionary.k_aiz_squared = "Squared!"
 	G.localization.misc.dictionary.k_aiz_cancelled = "Cancelled!"
 	G.localization.misc.dictionary.k_aiz_knowledge_gained = "Knowledge Gained!"
 	G.localization.misc.dictionary.k_aiz_dinner_postponed = "Dinner Postponed!"
-	G.localization.misc.dictionary.k_aiz_destroy = "Destroyed!"
+	G.localization.misc.dictionary.k_aiz_destroy = "摧毁！"
 
 	if config.allEnabled then
 		if config.jokersEnabled then
