@@ -88,10 +88,12 @@ local suits = {
 	light = {
 		"Hearts",
 		"Diamonds",
+		"印花"
 	},
 	dark = {
 		"Spades",
 		"Clubs",
+		"斧枪"
 	},
 }
 local function get_suit_type(card_suit)
@@ -894,12 +896,12 @@ function Jokers()
 		-- Create Joker
 		local knight = {
 			loc = {
-				name = "Knight",
+				name = "马",
 				text = {
-					"Converts scored {C:attention}#2#{} suits",
-					"To random {C:attention}#3#{} suits",
-					"Converted cards give {C:mult}+#1#{} Mult",
-					"{s:0.8}Flips conversion at end of round{}",
+					"将计分的{C:attention}#2#{}花色牌",
+					"转换为随机的{C:attention}#3#{}花色",
+					"每转换一张给予{C:mult}+#1#{}倍率",
+					"{s:0.8}回合结束时对调转换规则",
 				},
 			},
 			ability_name = "Aiz Knight",
@@ -909,7 +911,9 @@ function Jokers()
 					mult = 10,
 					change = {
 						from = "Dark",
+						from_disp = "暗色",
 						to = "Light",
+						to_disp = "亮色"
 					},
 				},
 			},
@@ -928,7 +932,7 @@ function Jokers()
 
 		-- Set local variables
 		SMODS.Jokers.j_aiz_knight.loc_def = function(card)
-			return { card.ability.extra.mult, card.ability.extra.change.from, card.ability.extra.change.to }
+			return { card.ability.extra.mult, card.ability.extra.change.from_disp, card.ability.extra.change.to_disp }
 		end
 
 		SMODS.Jokers.j_aiz_knight.set_ability = function(card)
