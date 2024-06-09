@@ -1132,15 +1132,12 @@ function Jokers()
 		-- Create Joker
 		local queen = {
 			loc = {
-				name = "Queen",
+				name = "后",
 				text = {
-					"When round begins,",
-					"destroy all cards",
-					"of {C:attention}lowest{} rank",
-					"in your full deck.",
-					"This Joker gains {X:mult,C:white}X{} Mult",
-					"for each card destroyed",
-					"{C:inactive}(Currently {X:mult,C:white}X#1#{C:inactive} Mult)",
+					"回合开始时，摧毁完整牌组中",
+					"所有点数{C:attention}最低{}的卡牌",
+					"每摧毁一张，本牌获得{X:mult,C:white}X0.05{}倍率",
+					"{C:inactive}（当前为{X:mult,C:white}X#1#{C:inactive}倍率）",
 				},
 			},
 			ability_name = "Aiz Queen",
@@ -1271,11 +1268,9 @@ function Jokers()
 			loc = {
 				name = "Jay-Z",
 				text = {
-					"{C:green}#1# in #2#{} chance this",
-					"card is destroyed and",
-					"{C:dark_edition}Polychrome{} is added",
-					"to {C:attention}All{} cards",
-					"at end of round",
+					"本牌有{C:green}#1#/#2#{}的几率",
+					"在回合结束时被摧毁",
+					"并为{C:attention}所有{}卡牌添加{C:dark_edition}多彩"
 				},
 			},
 			ability_name = "Aiz Jay-Z",
@@ -1730,11 +1725,11 @@ end
 function SMODS.INIT.JAIZ()
 	-- Localization
 	G.localization.misc.dictionary.k_aiz_advance = "进军！"
-	G.localization.misc.dictionary.k_aiz_promoted = "晋升！"
+	G.localization.misc.dictionary.k_aiz_promoted = "升变！"
 	G.localization.misc.dictionary.k_aiz_trolled = "逗你玩儿！"
 	G.localization.misc.dictionary.k_aiz_squared = "Squared!"
 	G.localization.misc.dictionary.k_aiz_cancelled = "Cancelled!"
-	G.localization.misc.dictionary.k_aiz_knowledge_gained = "Knowledge Gained!"
+	G.localization.misc.dictionary.k_aiz_knowledge_gained = "求知若饥！"
 	G.localization.misc.dictionary.k_aiz_dinner_postponed = "Dinner Postponed!"
 	G.localization.misc.dictionary.k_aiz_destroy = "摧毁！"
 
