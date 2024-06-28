@@ -25,6 +25,7 @@ Aiz.config = {
 		slightly_cooler_joker = true,
 		ultimate_unknown = true,
 		ultimate_gamer = true,
+		battle_pass = true,
 	},
 
 	suits = {
@@ -38,7 +39,7 @@ Aiz.config = {
 		},
 	},
 
-	-- slug and probability
+	-- joker key and probability
 	pawn = {
 		promotion = {
 			j_aiz_chess_knight = 10,
@@ -230,5 +231,6 @@ Aiz.config = {
 		j_aiz_banana_farm = false,
 		j_aiz_slightly_cooler_joker = true,
 		j_aiz_ultimate_unkown = true,
+		j_aiz_battle_pass = true,
 	},
 }
