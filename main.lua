@@ -82,7 +82,7 @@ local mod_path = SMODS.current_mod.path
 -- load config & utils
 -- NFS.load is a love2D function
 NFS.load(mod_path .. "utils.lua")()
-NFS.load(mod_path .. "config.lua")()
+NFS.load(mod_path .. "aiz_config.lua")()
 
 -- load all enabled jokers
 -- only explicitly disabled jokers are disabled
