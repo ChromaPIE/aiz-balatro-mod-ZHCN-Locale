@@ -1,12 +1,10 @@
 SMODS.Joker({
 	key = "chess_bishop",
 	loc_txt = {
-		name = "Bishop",
+		name = "象",
 		text = {
-			"Scored Numbered cards",
-			"earn {C:money}$#1#{}",
-			"Scored Face cards",
-			"{C:attention}lose{} {C:money}$#1#{}",
+			"数字牌计分时，获得{C:money}$#1#{}",
+			"人头牌计分时，{C:attention}失去{C:money}$#1#",
 		},
 	},
 	config = {

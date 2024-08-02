@@ -5,13 +5,10 @@
 SMODS.Joker({
 	key = "antibubzia",
 	loc_txt = {
-		name = "AntiBubzia",
+		name = "反向Bubzia",
 		text = {
-			"Plays the exact",
-			"same hand backwards",
-			"to cancel out",
-			"your score",
-			"every {C:attention}freaking{} time",
+			"把牌倒着打出去",
+			"分数就{C:attention}全特么{}清零了",
 		},
 	},
 	config = {},

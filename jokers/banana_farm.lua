@@ -1,10 +1,10 @@
 SMODS.Joker({
 	key = "banana_farm",
 	loc_txt = {
-		name = "Banana Farm",
+		name = "香蕉农场",
 		text = {
-			"New {C:attention}Jokers{} appear as",
-			"{C:attention}Gros Michel{}",
+			"新出现的{C:attention}小丑牌",
+			"均为{C:attention}大麦克香蕉",
 		},
 	},
 	config = {

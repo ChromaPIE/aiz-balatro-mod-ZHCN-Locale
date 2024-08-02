@@ -1,12 +1,12 @@
 SMODS.Joker({
 	key = "chess_pawn_storm",
 	loc_txt = {
-		name = "Pawn Storm",
+		name = "兵涛",
 		text = {
-			"When blind is selected,",
-			"if you have no Pawns",
-			"create {C:attention}#1# Pawns",
-			"{C:inactive}(Must have room){}",
+			"选择{C:attention}盲注{}时",
+			"若小丑牌槽位中没有兵",
+			"则生成{C:attention}#1#{}张兵",
+			"{C:inactive}（必须有空位）",
 		},
 	},
 	config = {

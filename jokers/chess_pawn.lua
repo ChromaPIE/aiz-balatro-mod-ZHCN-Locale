@@ -4,12 +4,11 @@
 SMODS.Joker({
 	key = "chess_pawn",
 	loc_txt = {
-		name = "Pawn",
+		name = "兵",
 		text = {
-			"Advances at end of round",
-			"or when skipping a {C:attention}Blind",
-			"Adds current rank to mult",
-			"{C:inactive}(Currently on rank {C:attention}#1#{C:inactive})",
+			"回合结束或跳过{C:attention}盲注{}时前进一行",
+			"给予与当前行数相等的倍率",
+			"{C:inactive}（当前位于第{C:attention}#1#{C:inactive}行）",
 		},
 	},
 	config = {

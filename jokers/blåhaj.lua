@@ -1,9 +1,9 @@
 SMODS.Joker({
 	key = "blåhaj",
 	loc_txt = {
-		name = "Blåhaj",
+		name = "布罗艾鲨鱼",
 		text = {
-			"{C:dark_edition}+#1#{} Joker slots",
+			"小丑牌槽位{C:dark_edition}+#1#",
 		},
 	},
 	config = {

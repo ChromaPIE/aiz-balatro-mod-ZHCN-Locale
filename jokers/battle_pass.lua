@@ -1,12 +1,10 @@
 SMODS.Joker({
 	key = "battle_pass",
 	loc_txt = {
-		name = "Battle Pass",
+		name = "战斗通行证",
 		text = {
-			"{C:attention}+#1#{} levels when a",
-			"poker hand is upgraded",
-			"Does not apply to",
-			"{C:attention}Planet cards",
+			"使用{C:attention}星球牌{}以外的途径",
+			"升级牌型时，额外{C:attention}+#1#{}级",
 		},
 	},
 	config = {

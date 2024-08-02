@@ -6,11 +6,8 @@ SMODS.Joker({
 	loc_txt = {
 		name = "Jay-Z",
 		text = {
-			"{C:green}#1# in #2#{} chance this",
-			"card is destroyed and",
-			"{C:dark_edition}Polychrome{} is added",
-			"to {C:attention}All{} cards",
-			"at end of round",
+			"回合结束时有{C:green}#1#/#2#{}的几率摧毁本牌",
+			"并使{C:attention}所有{}卡牌获得{C:dark_edition}多彩",
 		},
 	},
 	config = {
