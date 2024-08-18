@@ -1,10 +1,11 @@
 SMODS.Joker({
     key = "chess_king",
     loc_txt = {
-        name = "King",
+        name = "王",
         text = {
-            "Other {C:attention}Chess Jokers",
-            "Give {X:mult,C:white}X#1#{} Mult",
+            "除自身外的每张",
+            "{C:attention}国际象棋小丑牌",
+            "给予{X:mult,C:white}X#1#{}倍率",
         },
     },
     config = {

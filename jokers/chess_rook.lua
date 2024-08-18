@@ -5,14 +5,13 @@
 SMODS.Joker({
     key = "chess_rook",
     loc_txt = {
-        name = "Rook",
+        name = "车",
         text = {
-            "Enhances {C:attention}Discarded{} cards",
-            "into {C:attention}Stone Cards{}",
-            "{C:attention}-#1#{} discards",
-            "Gives {X:mult,C:white}XMult{} based on ratio of",
-            "{C:attention}Stone cards{} in your {C:attention}full deck.",
-            "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)",
+            "弃牌次数{C:attention}-#1#",
+            "将{C:attention}弃掉{}的卡牌增强为{C:attention}石头牌",
+            "按{C:attention}完整牌组{}中",
+            "{C:attention}石头牌{}的占比给予{X:mult,C:white}乘倍",
+            "{C:inactive}（当前为{X:mult,C:white}X#2#{C:inactive}倍率）",
         },
     },
     config = {

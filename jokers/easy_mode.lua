@@ -1,13 +1,12 @@
 SMODS.Joker({
     key = "easy_mode",
     loc_txt = {
-        name = "Easy Mode",
+        name = "简单模式",
         text = {
-            "Gives {C:mult}+1 mult{} for",
-            "every 2 jokers with",
-            "{C:attention}White stickers{}",
-            "in your collection",
-            "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)",
+            "收藏中每有{C:attention}2{}张小丑牌",
+            "带有{C:attention}白色纪念贴{}",
+            "{C:mult}+1{}倍率",
+            "{C:inactive}（当前为{C:mult}+#1#{C:inactive}倍率）",
         },
     },
     config = {

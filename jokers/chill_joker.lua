@@ -1,11 +1,10 @@
 SMODS.Joker({
     key = "chill_joker",
     loc_txt = {
-        name = "Chill Joker",
+        name = "松弛感小丑",
         text = {
-            "{X:mult,C:white}X#1#{} Mult divided",
-            "by game speed",
-            "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)",
+            "{X:mult,C:white}X(#1#/游戏速度){}倍率",
+            "{C:inactive}（当前为{X:mult,C:white}X#2#{C:inactive}倍率）",
         },
     },
     config = {

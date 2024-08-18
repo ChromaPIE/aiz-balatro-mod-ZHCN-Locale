@@ -3,15 +3,12 @@
 SMODS.Joker({
     key = "chess_queen",
     loc_txt = {
-        name = "Queen",
+        name = "后",
         text = {
-            "When blind is selected,",
-            "destroy all cards",
-            "of {C:attention}lowest{} rank",
-            "in your full deck.",
-            "This Joker gains {X:mult,C:white}X#2#{} Mult",
-            "for each card destroyed",
-            "{C:inactive}(Currently {X:mult,C:white}X#1#{C:inactive} Mult)",
+            "选择{C:attention}盲注{}时",
+            "摧毁完整牌组中点数{C:attention}最低{}的所有卡牌",
+            "每摧毁一张，本牌获得{X:mult,C:white}X#2#{}倍率",
+            "{C:inactive}（当前为{X:mult,C:white}X#1#{C:inactive}倍率）",
         },
     },
     config = {

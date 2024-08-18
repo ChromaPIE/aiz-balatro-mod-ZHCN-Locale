@@ -1,7 +1,7 @@
 SMODS.Joker({
     key = "loudspeaker",
     loc_txt = {
-        name = "Loudspeaker",
+        name = "大音箱",
         text = {
             "Gives {C:chips}Chips{} based",
             "on {C:attention}Audio volume{}",

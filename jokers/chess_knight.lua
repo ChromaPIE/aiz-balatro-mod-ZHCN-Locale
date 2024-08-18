@@ -1,13 +1,12 @@
 SMODS.Joker({
     key = "chess_knight",
     loc_txt = {
-        name = "Knight",
+        name = "马",
         text = {
-            "Converts scored {C:attention}#2#{} suits",
-            "To random {C:attention}#3#{} suits",
-            "Give {C:mult}+#1#{} Mult for each",
-            "converted card in played hand",
-            "{s:0.8}Flips order after conversion{}",
+            "将计分的{C:attention}#2#色{}花色牌",
+            "转换为随机一种{C:attention}#3#色{}花色",
+            "每发生一次转换，给予{C:mult}+#1#{}倍率",
+            "{s:0.8}转换后卡牌顺序将发生改变",
         },
     },
     config = {
@@ -15,8 +14,8 @@ SMODS.Joker({
             mult = 0,
             mult_mod = 10,
             change = {
-                from = "Dark",
-                to = "Light",
+                from = "暗",
+                to = "亮",
             },
         },
     },
@@ -43,8 +42,8 @@ SMODS.Joker({
         -- Randomize starting suits.
         -- Partially just to make it easier to have multiple knights be useful together.
         local change_to_light = (0.5 > pseudorandom("knight_suits"))
-        card.ability.extra.change.from = (change_to_light and "Dark" or "Light")
-        card.ability.extra.change.to = (change_to_light and "Light" or "Dark")
+        card.ability.extra.change.from = (change_to_light and "暗" or "亮")
+        card.ability.extra.change.to = (change_to_light and "亮" or "暗")
     end,
 
     calculate = function(self, card, context)

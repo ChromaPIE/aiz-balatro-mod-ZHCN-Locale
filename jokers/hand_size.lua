@@ -1,12 +1,12 @@
 SMODS.Joker({
     key = "hand_size",
     loc_txt = {
-        name = "Too Much To Handle",
+        name = "牌多握不住",
         text = {
-            "When blind is selected",
-            "set a random hand size",
-            "between {C:attention}#1#{} and {C:attention}#2#{}",
-            "{C:inactive}(Currently {C:attention}#3##4#{C:inactive} hand size)",
+            "选择{C:attention}盲注{}时",
+            "将手牌上限设为",
+            "{C:attention}#1#{}至{C:attention}#2#{}之间的任意值",
+            "{C:inactive}（当前为{C:attention}#3##4#{C:inactive}手牌上限)",
         },
     },
     config = {
